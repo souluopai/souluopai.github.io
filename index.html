@@ -99,7 +99,8 @@
                 data: { steps: $("#steps").val(), account: $("#account").val() },
                 success: function (res) {
                     console.log(res);
-                    if (res.message == 200) {
+                    alert(res.message)
+                    if (res.status == 200) {
                         alert("温馨提示：Sucess！")
 
                     } else {
