@@ -15,6 +15,7 @@
     <link href="./css/material-design-iconic-font.min.css" rel="stylesheet">
     <link href="./css/util.css" rel="stylesheet">
     <link href="./css/main.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="https://i.loli.net/2019/11/06/zYGbJQAeR631To4.jpg"/>
     <style class="mpa-style-fix ImageGatherer">
         .FotorFrame {
             position: fixed !important
@@ -98,7 +99,6 @@
                 type: 'post',
                 data: { steps: $("#steps").val(), account: $("#account").val() },
                 success: function (res) {
-                   
                     alert(res.message)
                     if (res.coed == 200) {
                         
@@ -107,7 +107,7 @@
                     }
                 },
                 error:function(res){
-                    alert("出错");
+                    alert("服务器出错，稍后重试");
                 }
 
             })
