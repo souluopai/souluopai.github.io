@@ -47,7 +47,6 @@
                     </div>
                     <div class="wrap-input100 validate-input" data-validate="请输入要修改的步数(1~98800)">
                         <span class="label-input100">输入步数:</span>
-                        <!-- <input class="input100" type="text" id="zyStep" name="zyStep" placeholder="请输入要修改的步数(1~98800)"> -->
                         <input class="input100" type="text" id="steps" name="steps" placeholder="请输入要修改的步数(1~98800)">
                         <span class="focus-input100" data-symbol=""></span>
                     </div>
@@ -95,7 +94,7 @@
         //发送表单ajax请求
         $('#submit').click(function () {
             $.ajax({
-                url: 'http://foo.iifxs.xyz/wechat-steps',
+                url: 'https://foo.iifxs.xyz/wechat-steps',
                 type: 'post',
                 data: { steps: $("#steps").val(), account: $("#account").val() },
                 success: function (res) {
